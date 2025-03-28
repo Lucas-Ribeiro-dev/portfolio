@@ -1,0 +1,71 @@
+/* Colors */
+:root {
+    --midnight-sky-blue: #0D1B2A;
+    --ocean-blue: #1B263B;
+    --blue: #415A77;
+    --light-blue: #778DA9;
+    --ice-beige: #E0E1DD;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+/* Playfair Display - h1 */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(/resources/fonts/play-fair-display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(/resources/fonts/play-fair-display/PlayfairDisplay-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+/* Montserrat - h2 */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/resources/fonts/montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/resources/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+/* Source Sans 3 - used on paragraphs and other texts*/
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url(/resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url(/resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+/* Pre-definitions */
+
+body {
+    justify-items: center;
+    margin: 0;
+    padding-top: 52px;
+    background-color: var(--ice-beige);
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+}
+h2 {
+    font-family: 'Montserrat';
+}
+p, li {
+    font-family: 'Source Sans 3';
+}
+
