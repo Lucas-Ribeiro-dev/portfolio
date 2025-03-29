@@ -144,21 +144,25 @@
 
 /* Contact Section */
 
-
+.contact-container-content {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
+}
 .contact-div1 {
-    background-color: var(--blue);
+    background-color: var(--ocean-blue);
 }
 .contact-items-btn {
-    padding: 10px;
-    background-color: var();
+    padding: 20px;
     display: grid;
     grid-template-columns: 20% 80%;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    border-radius: 10px;
+    max-height: 130px;
 
 }
 .contact-items-btn:hover {
-    background-color: var(--light-blue);
+    background-color: var(--blue);
 }
 
 .contact-items-btn img {
@@ -175,8 +179,11 @@
     justify-self: start;
 
 }
+.btn-text .pre-title {
+    font-size: 16px;
+}
 .btn-text h3, .btn-text .pre-title {
-    margin: 0;
+    margin: 5px;
     color: var(--ice-beige);
 }
 
