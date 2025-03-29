@@ -142,3 +142,62 @@
     margin: 40px auto;
 }
 
+/* Contact Section */
+
+
+.contact-div1 {
+    background-color: var(--blue);
+}
+.contact-items-btn {
+    padding: 10px;
+    background-color: var();
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.contact-items-btn:hover {
+    background-color: var(--light-blue);
+}
+
+.contact-items-btn img {
+    max-width: 100% ;
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+.btn-text {
+    padding: 10px;
+    margin-left: 10%;
+    align-self: center;
+    justify-self: start;
+
+}
+.btn-text h3, .btn-text .pre-title {
+    margin: 0;
+    color: var(--ice-beige);
+}
+
+.contact-div2 .contact-message-button {
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--midnight-sky-blue);
+    color: var(--ice-beige);
+    max-width: 185px;
+    max-height: 45px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contact-div2 .contact-message-button:hover {
+    cursor: pointer;
+    background-color: var(--ocean-blue);
+    font-size: 16px;
+}
