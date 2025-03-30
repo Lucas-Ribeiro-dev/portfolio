@@ -193,7 +193,10 @@
     color: var(--ice-beige);
 }
 
-.contact-div2 .contact-message-button {
+.contact-message-button {
+    display: flex;
+}
+.contact-message-button a {
     display: flex;
     padding: 10px 20px;
     border: none;
@@ -209,7 +212,7 @@
     align-items: center;
     justify-content: center;
 }
-.contact-div2 .contact-message-button:hover {
+.contact-message-button a:hover  {
     cursor: pointer;
     background-color: var(--ocean-blue);
     font-size: 16px;
