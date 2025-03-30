@@ -82,6 +82,13 @@
     font-size: 14px;
 }
 
+#contact-section-container h1, #services-section-container h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section-title {
+    margin-bottom: 40px;
+}
 /* my mission specific styles */
 .mission-img {
     margin: 0;
@@ -99,7 +106,7 @@
 /* Services division bars */
 .horizontal-line .line {
     background-color: var(--midnight-sky-blue);
-    height: 2px;
+    height: 1px;
     width: 50%;
 }
 .vertical-line .line {
@@ -143,7 +150,6 @@
 }
 
 /* Contact Section */
-
 .contact-container-content {
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
 }
