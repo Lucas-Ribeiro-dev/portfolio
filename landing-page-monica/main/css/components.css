@@ -1,0 +1,219 @@
+:root {
+    --midnight-sky-blue: #0D1B2A;
+    --ocean-blue: #1B263B;
+    --blue: #415A77;
+    --light-blue: #778DA9;
+    --ice-beige: #E0E1DD;
+}
+
+/* Nav bar title logo */
+.logo h1 {
+    padding: 0;
+    margin: 0;
+    color: var(--midnight-sky-blue);
+}
+.logo h1 a, h1 a:visited, h1 a:hover, h1 a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NavBar list items spacing bars */
+.nav-buttons ul li::after {
+    content: "|";
+    color: var(--midnight-sky-blue);
+    position: relative;
+    right: -20px;
+
+}
+.nav-buttons ul li:last-child::after {
+    content: "";
+}
+
+/* List items styles */
+.nav-buttons ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--midnight-sky-blue);
+    gap: 20px;
+    font-weight: bold;
+}
+.nav-buttons ul li a:hover {
+    border-bottom: var(--midnight-sky-blue) solid 2px;
+}
+/* list items layout */
+.nav-buttons ul {
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+.nav-buttons li {
+    display: inline;
+}
+
+/* General container content */
+.content-text {
+    padding: 40px;
+}
+.content-text h1 {
+    margin: 0 auto;
+}
+.content-text .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: var(--midnight-sky-blue);
+    color: var(--ice-beige);
+}
+.content-text .button:hover {
+    cursor: pointer;
+    background-color: var(--ocean-blue);
+    font-size: 14px;
+}
+.content-paragraph {
+    margin: 60px auto;
+}
+.pre-title {
+    margin-bottom: 0px;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+#contact-section-container h1, #services-section-container h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section-title {
+    margin-bottom: 40px;
+}
+/* my mission specific styles */
+.mission-img {
+    margin: 0;
+}
+.mission-img img {
+    max-width: 100%;
+    max-height: 700px;
+}
+
+/* AboutMe */
+.aboutme-container-content figure {
+    margin: 0 auto;
+}
+
+/* Services division bars */
+.horizontal-line .line {
+    background-color: var(--midnight-sky-blue);
+    height: 1px;
+    width: 50%;
+}
+.vertical-line .line {
+    background-color: var(--midnight-sky-blue);
+    height: 50%;
+    width: 2px;
+    transform: translateY(-50%);
+}
+
+/* services images boxes */
+.serv1 figure , .serv2 figure {
+    margin: 0 auto;
+}
+.serv1 figure img, .serv2 figure img{
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+.serv3 figure, .serv4 figure {
+    margin: 0 auto;
+}
+.serv3 figure img, .serv4 figure img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Services text boxes - group 2*/
+.serv3 .content-text, .serv4 .content-text {
+    height: 100%;
+    width: 100%;
+}
+.service2-content-text {
+    padding: 30px;
+    text-align: center;
+}
+.service2-content-text h1 {
+    margin: 0 auto;
+}
+.service2-content-paragraph {
+    margin: 40px auto;
+}
+
+/* Contact Section */
+.contact-container-content {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
+}
+.contact-div1 {
+    background-color: var(--ocean-blue);
+}
+.contact-items-btn {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    border-radius: 10px;
+    max-height: 130px;
+
+}
+.contact-items-btn:hover {
+    background-color: var(--blue);
+}
+
+.contact-items-btn img {
+    max-width: 100% ;
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+.btn-text {
+    padding: 10px;
+    margin-left: 10%;
+    align-self: center;
+    justify-self: start;
+
+}
+.btn-text .pre-title {
+    font-size: 16px;
+}
+.btn-text h3, .btn-text .pre-title {
+    margin: 5px;
+    color: var(--ice-beige);
+}
+
+.contact-message-button {
+    display: flex;
+}
+.contact-message-button a {
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--midnight-sky-blue);
+    color: var(--ice-beige);
+    max-width: 185px;
+    max-height: 45px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contact-message-button a:hover  {
+    cursor: pointer;
+    background-color: var(--ocean-blue);
+    font-size: 16px;
+}
