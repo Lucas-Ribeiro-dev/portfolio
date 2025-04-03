@@ -78,7 +78,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background-color: var(--midnight-sky-blue);
+    background-color: var(--ocean-blue);
 }
 .services-container-content-father {
     display: grid;

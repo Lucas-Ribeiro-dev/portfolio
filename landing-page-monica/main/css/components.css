@@ -66,12 +66,12 @@
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
-    background-color: var(--midnight-sky-blue);
+    background-color: var(--ocean-blue);
     color: var(--ice-beige);
 }
 .content-text .button:hover {
     cursor: pointer;
-    background-color: var(--ocean-blue);
+    background-color: var(--midnight-sky-blue);
     font-size: 14px;
 }
 .content-paragraph {
@@ -211,7 +211,7 @@
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--midnight-sky-blue);
+    background-color: var(--ocean-blue);
     color: var(--ice-beige);
     max-width: 185px;
     max-height: 45px;
@@ -221,7 +221,7 @@
 }
 .contact-message-button a:hover  {
     cursor: pointer;
-    background-color: var(--ocean-blue);
+    background-color: var(--midnight-sky-blue);
     font-size: 16px;
 }
 textarea {
