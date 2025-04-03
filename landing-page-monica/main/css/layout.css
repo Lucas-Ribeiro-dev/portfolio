@@ -175,10 +175,6 @@
     width: 100%;
     gap: 10px;
 }
-.name textarea .client-email textarea {
-    width: 100%;
-    height: 50%;
-}
 .client-email {
     grid-area: client-email;
     display: flex;
