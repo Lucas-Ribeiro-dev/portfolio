@@ -13,7 +13,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
-    max-height: 50px;
+    max-height: 55px;
     padding: 10px 20px;
     z-index: 1000;
     display: flex;
@@ -72,7 +72,7 @@
 }
 #services-section-container2 {
     width: 100%;
-    min-height: 600px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,9 +88,12 @@
 .services-container-content-child {
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    max-height: 550px;
-    max-width: 1270px;
+    height: 650px;
+    max-height: 100%;
+    max-width: 1300px;
     background-color: var(--ice-beige);
+    overflow: hidden;
+    box-sizing: border-box;
 }
 /* Only lines */
 .horizontal-line {
@@ -122,9 +125,11 @@
     display: grid;
     grid-template-rows: 50% 50%;
     padding: 20px;
-    height: 600px;
+    height: 650px;
     max-height: 100%;
     max-width: 100%;
+    justify-items: center;
+    box-sizing: border-box;
 }
 
 /* Contact Section */
@@ -137,7 +142,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     max-width: 1400px;
-    min-height: 550px;
+    height: 550px;
     width: 100%;
     background-color: var(--ice-beige);
     
@@ -154,26 +159,69 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr 1fr;
-    grid-template-areas:    "name surname"
+    grid-template-areas:    "name client-email"
                             "services-select services-select"
                             "message message"
                             "contact-message-button contact-message-button";
     padding: 40px;
     gap: 20px;
     justify-content: center;
+    max-height: 550px;
 }
-#name {
+.name {
+    display: flex;
+    flex-direction: column;
     grid-area: name;
+    width: 100%;
+    gap: 10px;
 }
-#surname {
-    grid-area: surname;
+.name textarea .client-email textarea {
+    width: 100%;
+    height: 50%;
 }
-#services-select {
+.client-email {
+    grid-area: client-email;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.services-select {
     grid-area: services-select;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
 }
-#message {
+.services-select select {
+    width: 100%;
+    height: 80%;
+}
+
+.message {
     grid-area: message;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.message textarea {
+    width: 100%;
+    height: 80%;
 }
 #contact-message-button {
     grid-area: contact-message-button;
+}
+
+#footer-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: var(--ocean-blue);
 }

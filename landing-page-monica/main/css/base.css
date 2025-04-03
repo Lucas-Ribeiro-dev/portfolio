@@ -24,16 +24,16 @@
     font-weight: 100 900;
     font-style: italic;
 }
-/* Montserrat - h2 */
+/* Lora - h2 */
 @font-face {
-    font-family: 'Montserrat';
-    src: url(/resources/fonts/montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-family: 'Lora';
+    src: url(/resources/fonts/lora/Lora-VariableFont_wght.ttf) format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat';
-    src: url(/resources/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('truetype');
+    font-family: 'Lora';
+    src: url(/resources/fonts/lora/Lora-Italic-VariableFont_wght.ttf) format('truetype');
     font-weight: 100 900;
     font-style: italic;
 }
@@ -50,22 +50,32 @@
     font-weight: 100 900;
     font-style: italic;
 }
+
+
 /* Pre-definitions */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
 
 body {
     justify-items: center;
     margin: 0;
-    padding-top: 52px;
+    padding-top: 56px;
     background-color: var(--ice-beige);
 }
 
 h1 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
 }
 h2 {
-    font-family: 'Montserrat';
+    font-family: 'Lora', serif;
+    font-size: 2rem;
 }
 p, li {
-    font-family: 'Source Sans 3';
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.2rem;
 }
 
