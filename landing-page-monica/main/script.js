@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
 
 // Open WeChat Modal
 // This script opens a modal when the user clicks on the WeChat button in the contact section.
-document.querySelector('.contact-items-btn').addEventListener('click', function (event) {
+document.querySelector('.wechat-trigger').addEventListener('click', function (event) {
     event.preventDefault(); // impede que o link execute sua ação padrão
     document.getElementById('wechatModal').style.display = 'flex';
 });
