@@ -1,15 +1,75 @@
-
-
 @media only screen and (max-width: 480px) {
     html {
         font-size: 14px;
     }
-    body, html {
+
+    body,
+    html {
         width: 100%;
         margin: 0;
     }
+
+    body {
+        padding-top: 140px;
+    }
+
+    /* navbar */
+    #navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "logo"
+            "menu";
+        width: 100%;
+        height: auto;
+        max-height: 155px;
+    }
+
+    #navbar .logo {
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #navbar .nav-buttons {
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Scrooling "No Logo" Effect */
+    #navbar.scrolled {
+        position: fixed;
+        top: 0;
+        grid-template-rows: 1fr;
+        max-height: 60px;
+    }
+
+    #navbar.scrolled .logo {
+        display: none;
+    }
+
+    
+    .nav-buttons a, .nav-buttons a:hover, .nav-buttons a:focus, .nav-buttons a:active, .nav-buttons a:visited, .nav-buttons a::after, .nav-buttons li a::after {
+        text-decoration: none !important;
+        outline: none !important;
+        border: none !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
+        content: '' !important;
+        display: inline !important;
+    }
+
+
     /* general Sections */
-    #my-mission-section-container, #aboutme-section-container, #contact-section-container {
+    #my-mission-section-container,
+    #aboutme-section-container,
+    #contact-section-container {
         min-height: 500px;
         width: 100%;
         display: flex;
@@ -17,9 +77,15 @@
         align-items: center;
         margin: 20px auto;
     }
+
     /* My Mission Section layout */
     /* This code will fix Mymission; About me; Services ccontent containers */
-    .mission-container-content, .aboutme-container-content, .serv1, .serv2 {
+    .mission-container-content,
+    .aboutme-container-content,
+    .serv1,
+    .serv2,
+    .serv3,
+    .serv4 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -28,7 +94,13 @@
         width: 100%;
         height: auto;
     }
-    .mission-container-content figure, .aboutme-container-content figure, .serv1 figure , .serv2 figure  {
+
+    .mission-container-content figure,
+    .aboutme-container-content figure,
+    .serv1 figure,
+    .serv2 figure,
+    .serv3 figure,
+    .serv4 figure {
         grid-area: img;
         margin: 0 auto;
         padding: 0;
@@ -37,13 +109,19 @@
         overflow: hidden;
 
     }
-    .mission-container-content img, .aboutme-container-content img {
+
+    .mission-container-content img,
+    .aboutme-container-content img,
+    .serv1 img,
+    .serv2 img,
+    .serv3 img,
+    .serv4 img {
         max-width: 100%;
         height: auto;
         display: block;
     }
 
-    .aboutme-container-content .content-text{
+    .aboutme-container-content .content-text {
         grid-area: text;
     }
 
@@ -53,10 +131,11 @@
         margin: 0 auto;
         background-color: var(--ocean-blue);
     }
+
     .aboutme-container-content {
         padding: 0;
     }
-    
+
     .aboutme-container-content .content-text {
         grid-area: text;
         padding: 0;
@@ -64,12 +143,12 @@
         text-align: center;
         max-width: 100%;
     }
+
     .aboutme-container-content .content-text p {
         margin: 10%;
     }
+
     /* services */
-
-
     .services-container-content-father {
         display: grid;
         grid-template-rows: 1fr 1px 1fr;
@@ -77,12 +156,146 @@
         width: 100%;
     }
 
-    .serv1 img, .serv2 img {
+    .serv1 img,
+    .serv2 img {
         max-width: 100%;
         height: auto;
         display: block;
     }
 
-    
+    #services-section-container2 {
+        margin: 0 auto;
+        background-color: var(--ocean-blue);
+        min-height: 720px;
+        padding: 5px;
+        overflow: hidden;
+    }
 
+    .services-container-content-child {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "serv3"
+            "serv4";
+        width: 100%;
+        height: 700px;
+        overflow: scroll;
+    }
+
+    .serv3 {
+        grid-area: serv3;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .serv4 {
+        grid-area: serv4;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Section */
+    #contact-section-container {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    #contact-section-container .section-title {
+        font-size: 2em;
+        text-align: center;
+        margin: 40px;
+        padding: 0;
+
+    }
+
+    .contact-container-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-div1 {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .contact-items-btn {
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        max-height: 130px;
+    }
+
+    .contact-items-btn .button-icon {
+        display: flex;
+        max-width: 50px;
+        max-height: 50px;
+        justify-self: center;
+    }
+
+    .contact-div2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+        grid-template-areas: "name name"
+            "client-email client-email"
+            "services-select services-select"
+            "message message"
+            "contact-message-button contact-message-button";
+        padding: 30px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #footer-section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90% 10%;
+        grid-template-areas:
+            "footer-logo footer-social-media"
+            "footer-text footer-text";
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        grid-area: footer-logo;
+        padding: 20px;
+    }
+
+    .footer-social-media {
+        grid-area: footer-social-media;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-social-media img {
+        max-width: 100%;
+        max-height: 100%;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        opacity: 0.9;
+    }
+
+    .footer-text {
+        grid-area: footer-text;
+        color: var(--ice-beige);
+        font-size: 15px;
+        text-align: start;
+        align-items: baseline;
+        padding: 10px;
+        height: 100%;
+    }
 }

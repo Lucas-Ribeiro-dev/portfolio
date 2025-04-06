@@ -40,6 +40,7 @@
 .nav-buttons ul li a:hover {
     border-bottom: var(--midnight-sky-blue) solid 2px;
 }
+
 /* list items layout */
 .nav-buttons ul {
     display: flex;
@@ -237,7 +238,7 @@ textarea, #services-select {
 #name, #client-email, #services-select {
     width: 100%;
     height: 50px;
-    padding: 10px 30px 10px 10px;
+    padding: 15px 30px 10px 10px;
 }
 /* Footer */
 .footer-text {
