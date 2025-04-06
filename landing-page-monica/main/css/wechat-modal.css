@@ -13,7 +13,7 @@
     display: flex;
 }
 
-/* Caixa do modal */
+/* Modal Box*/
 .modal-content {
   position: relative;
   background-color: #fff;
@@ -26,20 +26,20 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Animação suave */
+/* Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
 
-/* Imagem do QR Code */
+/* QR Code IMG */
 .modal-content img {
   width: 100%;
   height: auto;
   max-width: 400px;
 }
 
-/* Botão de fechar */
+/* Close Button */
 .close {
   position: absolute;
   top: 10px;
@@ -50,7 +50,6 @@
   cursor: pointer;
   transition: color 0.2s ease;
 }
-
 .close:hover {
   color: #888;
 }
