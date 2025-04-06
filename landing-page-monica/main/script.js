@@ -10,3 +10,25 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 });
+
+// Open WeChat Modal
+// This script opens a modal when the user clicks on the WeChat button in the contact section.
+document.querySelector('.contact-items-btn').addEventListener('click', function (event) {
+    event.preventDefault(); // impede que o link execute sua ação padrão
+    document.getElementById('wechatModal').style.display = 'flex';
+});
+
+// Close WeChat Modal
+// This script closes the modal when the user clicks on the close button inside the modal.
+document.querySelector('.close').addEventListener('click', function () {
+    document.getElementById('wechatModal').style.display = 'none';
+});
+
+// Close WeChat Modal when clicking outside of it
+// This script closes the modal when the user clicks outside of it.
+window.addEventListener('click', function (event) {
+    const modal = document.getElementById('wechatModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
