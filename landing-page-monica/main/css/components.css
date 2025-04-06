@@ -201,10 +201,8 @@
     color: var(--ice-beige);
 }
 
+
 .contact-message-button {
-    display: flex;
-}
-.contact-message-button a {
     display: flex;
     padding: 10px 20px;
     border: none;
@@ -220,12 +218,12 @@
     align-items: center;
     justify-content: center;
 }
-.contact-message-button a:hover  {
+.contact-message-button:hover  {
     cursor: pointer;
     background-color: var(--midnight-sky-blue);
     font-size: 16px;
 }
-textarea, #services-select {
+input, #services-select {
     border-radius: 10px;
     resize: none;
     color: var(--midnight-sky-blue);
@@ -233,6 +231,7 @@ textarea, #services-select {
     font-size: 1.2rem;
     display: flex;
     align-content: center;
+    border: solid 1px var(--midnight-sky-blue);
 }
 
 #name, #client-email, #services-select {

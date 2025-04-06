@@ -184,18 +184,18 @@
                 </a>
             </div>
             <!-- Right side -->
-            <div class="contact-div2">
+            <form action="https://formsubmit.co/2404645056@qq.com" method="post" class="contact-div2">
                 <div class="name">
                     <label for="name">Name:</label>
-                    <textarea name="name" id="name" placeholder="Enter name"></textarea>
+                    <input name="name" id="name" placeholder="Enter name" required>
                 </div>
                 <div class="client-email">
                     <label for="client-email">E-Mail:</label>
-                    <textarea name="client email" id="client-email" placeholder="Enter your email"></textarea>
+                    <input name="client email" id="client-email" placeholder="Enter your email" required>
                 </div>
                 <div class="services-select">
                     <label for="services-select">Select the services cathegory that best describe your needs:</label>
-                    <select name="select-services" id="services-select">
+                    <select name="select-services" id="services-select" required>
                         <option value="service1">Business and Factory Guide</option>
                         <option value="service2">Event and Conference Interpreter</option>
                         <option value="service3">Exhibition and Trade Show Translator</option>
@@ -207,8 +207,10 @@
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" placeholder="Send Your Request"></textarea>
                 </div>
-                <div class="contact-message-button"><a href=""> Send Your Message! </a></div>
-            </div>
+                <div class="contact-message-button">
+                    <button type="submit" class="contact-message-button">Send Your Message!</button>
+                </div>                  
+            </form>
         </div>
     </section>
     <!-- end contact section -->
