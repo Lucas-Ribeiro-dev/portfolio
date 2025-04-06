@@ -29,6 +29,7 @@
 
 #my-mission-section-container, #aboutme-section-container, #contact-section-container {
     min-height: 700px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -46,7 +47,7 @@
 .mission-container-content, .aboutme-container-content {
     max-width: 1400px;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
