@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/main/css/base.css">
     <link rel="stylesheet" href="/main/css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/form-confirmation.html.css">
     <!-- CSS for Mobile -->
     <link rel="stylesheet" href="css/media-querry/mx480width.css">
     <link rel="stylesheet" href="css/media-querry/mx768width.css">
@@ -184,7 +185,7 @@
                 </a>
             </div>
             <!-- Right side -->
-            <form action="https://formsubmit.co/2404645056@qq.com" method="post" class="contact-div2">
+            <form action="https://formspree.io/f/xwplwwee" method="post" class="contact-div2">
                 <div class="name">
                     <label for="name">Name:</label>
                     <input name="name" id="name" placeholder="Enter name" required>
@@ -207,6 +208,7 @@
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" placeholder="Send Your Request"></textarea>
                 </div>
+                <input type="hidden" name="_redirect" value=".../main/form-confirmation.html">
                 <div class="contact-message-button">
                     <button type="submit" class="contact-message-button">Send Your Message!</button>
                 </div>                  

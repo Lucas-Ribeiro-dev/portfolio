@@ -234,6 +234,7 @@ input, #services-select {
     border: solid 1px var(--midnight-sky-blue);
 }
 
+
 #name, #client-email, #services-select {
     width: 100%;
     height: 50px;
