@@ -1,0 +1,20 @@
+
+.hero-banner {
+    background-image: url(/recursos/img/fotos/baratas\ francesas.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    display: block;
+        
+}
+
+.about-us-img {
+    background-image: url(/recursos/img/fotos/baratas\ francesas.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    display: block;
+}

@@ -1,0 +1,75 @@
+:root {
+    --vermelho-escuro: #c8102e;
+    /* Cor principal - Botões, destaques, chamada pra ação*/
+    --cinza-escuro: #1e1e1e;
+    /* Cor neutra escura - Títulos, rodapé, contrastes */
+    --fundo-claro: #f5f5f5;
+    /*Fundo Claro - Seções alternadas */
+    --cinza-medio: #333;
+    /* Texto principal - Texto, parágrafos */
+    --laranja: #ff5722;
+    /* Cor de destaque - bordas, hover */
+}
+
+@font-face {
+    /* Títulos e CTA */
+    font-family: 'anton';
+    src: url('/recursos/fontes/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* Texto padrão */
+    font-family: 'roboto';
+    src: url('/recursos/fontes/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+  }
+
+body {
+    display: block;
+    margin: 8px 8px 0px 8px;
+}
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--cinza-escuro);
+}
+
+h1,
+h2,
+h3,
+.cta-btn,
+.serv-cta-btn,
+.contact-cta-btn {
+    font-family: 'poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: 'roboto', sans-serif;
+    color: var(--cinza-medio);
+    font-size: 1.3rem;
+}
